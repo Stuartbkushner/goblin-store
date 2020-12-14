@@ -9,7 +9,7 @@ export const Header = () => (
         <Link to="/">
           <h1>Goblin Store</h1>
         </Link>
-        <p>Everything for your TypeScript Adventure!</p>
+        <p>Everything for your Typescript adventure</p>
       </div>
       <div className="cart">
         <CartWidget />

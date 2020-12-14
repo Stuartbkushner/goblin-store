@@ -18,7 +18,8 @@ const orders: Order[] = [];
 
 const app = express()
 
-app.use(cors())
+// app.use(cors())
+app.use((req, res, next) => { next(); }, cors({maxAge: 84600}));
 app.use(bodyParser.json())
 
 const port = 4000
@@ -50,5 +51,5 @@ app.get("/order/:orderId", (req, res) => {
 })
 
 app.listen(port, () =>
-  console.log(`Running on http://localhost:${port}`)
+  console.log(`Goblin store backend running on http://localhost:${port}!`)
 )

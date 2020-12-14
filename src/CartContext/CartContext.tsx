@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import { Product } from "../shared/types"
 
 interface CartContextValue {
@@ -61,7 +61,7 @@ export const CartProvider = ({ children }: React.PropsWithChildren<{}>) => {
         removeFromCart,
         clearCart,
         products,
-        totalPrice
+        totalPrice,
       }}
     >
       {children}

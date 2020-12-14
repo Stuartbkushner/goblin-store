@@ -1,5 +1,5 @@
-import React from 'react'
-import { Product } from '../shared/types'
+import React from "react"
+import { Product } from "../shared/types"
 
 interface CartItemProps {
   product: Product
@@ -17,12 +17,12 @@ export const CartItem = ({ product, removeFromCart }: CartItemProps) => {
         alt="goblin"
       />
       <p>{product.name}</p>
-      <p>{product.price}</p>
+      <p>{product.price} Zm</p>
       <button
         onClick={() => {
           removeFromCart(product)
         }}
-        className="is-error"
+        className="nes-btn is-error"
       >
         Remove
       </button>
