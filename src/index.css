@@ -14,3 +14,44 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+#root > .container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  border-bottom: 4px solid #d3d3d3;
+  background-color: white;
+}
+
+header > .container {
+  display: flex;
+  align-items: baseline;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+header > .container > .nav-brand {
+  margin-right: auto;
+}
+header > .container > .social-button {
+  margin-left: auto;
+}
+
+@media screen and (max-width: calc(980px - 4rem)) {
+  header > .container {
+    margin: 0 4rem;
+  }
+}
