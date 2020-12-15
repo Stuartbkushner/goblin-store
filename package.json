@@ -31,6 +31,8 @@
     "@types/node": "^13.13.1",
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
+    "cypress": "^6.1.0",
+    "cypress-react-unit-test": "^4.17.2",
     "express": "^4.17.1",
     "ts-node": "^8.9.0"
   },
@@ -41,6 +43,7 @@
     "eject": "react-scripts eject",
     "start:server": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
     "dev": "concurrently --kill-others \"npm run start:server\" \"npm run start\"",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
